@@ -8,7 +8,12 @@ Template for creating PDF for EPITECH.
 
 ## Usage
 
-To build simply use `make`.
+To build simply use `make` or you can build the
+[DocumentBuilder](https://github.com/PizziPayment/DocumentBuilder) image.
+
+Don't forget to add your repository to the document builder's package access
+list
+[here](https://github.com/orgs/PizziPayment/packages/container/document_builder/settings).
 
 ### Template variables
 
