@@ -1,0 +1,83 @@
+\documentclass[titlepage]{article}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{framed}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{ragged2e}
+\usepackage{subcaption}
+\usepackage{svg}
+\usepackage{xcolor}
+\usepackage{tabu}
+\usepackage[toc]{glossaries}
+\usepackage[utf8]{inputenc}
+
+\usepackage[default]{sourcesanspro}
+\usepackage{sourcecodepro}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!20!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black},
+    pageanchor=true
+}
+
+\definecolor{epitech-blue}{RGB}{0, 105, 179}
+
+\pagestyle{fancy}
+\fancyhf{}
+$if(subtitle)$
+  \lhead{$title$ - $subtitle$}
+$else$
+  \lhead{$title$}
+$endif$
+\rhead{$date$}
+\lfoot{Groupe Pizzi}
+\rfoot{Page \thepage sur \pageref{LastPage}}
+\renewcommand{\footrulewidth}{1pt}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\begin{document}
+
+\begin{titlepage}
+	\newgeometry{left=0.75cm,top=0.75cm,right=0.75cm,textwidth=\textwidth}
+	\noindent
+	\includegraphics[width=\textwidth]{resources/header-decoration.png}
+	\vspace{1cm}
+	\begin{center}
+		\includegraphics[scale=0.8]{resources/pizzi-logo.png}
+	\end{center}
+	\vspace{0.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{resources/epitech-logo.png}
+	\end{center}
+
+	\begin{flushright}
+		\huge{\color{epitech-blue}$title/uppercase$\hspace{2cm}}
+
+		\large{$for(author)$$author/uppercase$$sep$, $endfor$\hspace*{2cm}}
+	\end{flushright}
+	\setcounter{page}{0}
+\end{titlepage}
+
+\restoregeometry
+
+\newgeometry{bottom=2cm,includefoot}
+$body$
+
+\end{document}
