@@ -15,6 +15,11 @@ Don't forget to add your repository to the document builder's package access
 list
 [here](https://github.com/orgs/PizziPayment/packages/container/document_builder/settings).
 
+### Template specification
+
+Do turn the template into a document you need to replace the `TODO` in
+`src/00_info.md` as well as editing template variables.
+
 ### Template variables
 
 The file `src/00_info.md` can be edited to customize the document. The template
