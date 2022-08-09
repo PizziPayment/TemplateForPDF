@@ -10,7 +10,7 @@ on:
       - master
 
 jobs:
-  build-pld:
+  build-document:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
