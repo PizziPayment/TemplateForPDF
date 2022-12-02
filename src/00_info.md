@@ -1,4 +1,5 @@
 ---
+project: Pizzi
 author:
   - Groupe Pizzi - PROMO 2023
 title: 'Titre'
@@ -26,9 +27,10 @@ lang: fr
 
 ## Tableau des révisions
 
-| **Date**         | **Version**   | **Auteur**            | **Section(s)**   | **Commentaires**             |
-| ---------------- | ------------- | --------------------  | ---------------- | ---------------------------- |
-| 07/08/2022       | 0.1           | Mathieu Pointecouteau | Toutes           | Création du template         |
+| **Date**         | **Version**   | **Auteur**            | **Section(s)**          | **Commentaires**                    |
+| ---------------- | ------------- | --------------------  | ----------------        | ----------------------------        |
+| 07/08/2022       | 0.1           | Mathieu Pointecouteau | Toutes                  | Création du template                |
+| 02/12/2022       | 0.2           | Mathieu Pointecouteau | En-tête et pied de page | Ajout du nom de la section en cours |
 
 \clearpage
 

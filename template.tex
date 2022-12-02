@@ -39,12 +39,12 @@
 \pagestyle{fancy}
 \fancyhf{}
 $if(subtitle)$
-  \lhead{$title$ - $subtitle$}
+  \lhead{$project$ | $title$ - $subtitle$}
 $else$
-  \lhead{$title$}
+  \lhead{$project$ | $title$}
 $endif$
-\rhead{$date$}
-\lfoot{Groupe Pizzi}
+\rhead{\leftmark}
+
 \rfoot{Page {\thepage} sur \pageref{LastPage}}
 \renewcommand{\footrulewidth}{1pt}
 
