@@ -8,7 +8,7 @@
 \usepackage{float}
 \usepackage{framed}
 \usepackage[french]{babel}
-\usepackage{geometry}
+\usepackage[headheight=26pt]{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{lastpage}
@@ -39,11 +39,12 @@
 \pagestyle{fancy}
 \fancyhf{}
 $if(subtitle)$
-  \lhead{$project$ | $title$ - $subtitle$}
+  \newcommand{\lheadercontent}{$title$ - $subtitle$}
 $else$
-  \lhead{$project$ | $title$}
+  \newcommand{\lheadercontent}{$title$}
 $endif$
-\rhead{\leftmark}
+\lhead{\includegraphics[width=0.4cm]{resources/pizzi-logo.png} $project$ | \lheadercontent}
+\rhead{\nouppercase{\leftmark}}
 
 \rfoot{Page {\thepage} sur \pageref{LastPage}}
 \renewcommand{\footrulewidth}{1pt}
